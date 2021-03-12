@@ -7,46 +7,64 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- <script src="/jquery/jquery.js"></script> -->
-    <!-- <script>
+    <script src="/jquery/jquery.js"></script>
+    <script>
         var Module = {
             onRuntimeInitialized: function () {
-                $.getScript('tests/test-value.js');
-                $.getScript('tests/wasm-psat-test.js');
-                $.getScript('tests/wasm-motor-test.js');
-                $.getScript('tests/wasm-fan-test.js');
-                $.getScript('tests/wasm-phast-test.js');
-                $.getScript('tests/wasm-standalone-test.js');
-                $.getScript('tests/finish-testing.js');
+            console.log('loaded')
+                $.getScript('assets/app.js');
             }
         }
-    </script> -->
-    <!-- <script src="assets/client.js"></script>
+    </script> 
+    <script src="assets/fibonacci.js"></script>
     <style>
-        .invalid {
-            color: red;
-            padding-top: 3px;
+        .cell-width, tbody td{
+            width: 20%;
+            text-align: center;
         }
-
-        .valid {
-            color: green;
-            padding-top: 3px;
+        table{
+            width: 100%;
         }
-
-        label{
-            font-size: larger;
-            font-weight: bold;
-        }
-        .expected-div{
-            border-bottom: solid 2px;
-            padding-bottom: 3px;
-        }
-    </style> -->
+    </style>
 </head>
 
 <body>
-    <!-- <script src="tests/wasm-example-test.js"></script> -->
     <label>Wasm Tests</label>
+    <table>
+        <thead>
+            <tr>
+                <th>
+
+                </th>
+                <th colspan="2">
+                    Javascript
+                </th>
+                <th colspan="2">
+                    WASM
+                </th>
+            </tr>
+            <tr>
+                <th class="table-width">
+                    Number
+                </th>
+                <th class="table-width">
+                    Result
+                </th>
+                <th class="table-width">
+                    Calculation Time
+                </th>
+                <th class="table-width">
+                    Result
+                </th>
+                <th class="table-width">
+                    Calculation Time
+                </th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+
+        </tbody>
+    </table>
 </body>
 
 </html>
