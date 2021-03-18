@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node index.js",
+    "build-wasm": "emcc --bind -o app/fibonacci.js cpp/fibonacci.cpp",
+    "build-wasm-optimized": "emcc -O3 --bind -o app/fibonacci.js cpp/fibonacci.cpp"
   },
   "author": "",
   "license": "ISC",

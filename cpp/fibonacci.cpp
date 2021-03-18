@@ -1,6 +1,6 @@
-
 #include <emscripten/bind.h>
 using namespace emscripten;
+
 
 int fibonacci(int n)
 {
@@ -8,6 +8,7 @@ int fibonacci(int n)
         return n;
     return fibonacci(n - 1) + fibonacci(n - 2);
 }
+
 
 class Fibonacci
 {
