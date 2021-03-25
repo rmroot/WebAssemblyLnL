@@ -8,9 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <script src="/jquery/jquery.js"></script>
-    <!--WASM MODULE LOADED RUN app.js-->
+    <!--WASM MODULE LOADED RUN wasmTest.js-->
     <script>
-        var FibModule = {
+        var WasmModule = {
             onRuntimeInitialized: function () {
                 console.log('loaded')
                 $.getScript('assets/wasmTest.js');
