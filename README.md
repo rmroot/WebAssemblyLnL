@@ -1,6 +1,6 @@
 # WebAssemblyLnL
 
-This repository was used for an Intertech Lunch and Learn as well as this (link) blog post.
+This repository was used for an Intertech Lunch and Learn as well as this (https://www.intertech.com/webassembly-what-why-and-how/) blog post.
 
 It contains an example web assembly implementation using C++ and Emscripten. 
 
